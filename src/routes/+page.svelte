@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Card from '../components/Card/index.svelte';
 	import Navbar from '../components/Navbar/navbar.svelte';
+	import Container from '../components/Container/container.svelte';
+	import Hero from '../components/Hero/hero.svelte';
+
+
 
 	// const details = {
 	// 	title: 'Universal key value',
@@ -13,4 +17,18 @@
 	// };
 </script>
 
-<Navbar />
+	<Navbar />
+	<Container>
+	<Hero/>
+	</Container>
+
+
+
+
+<style >
+	:global(body){
+
+		font-family: 'Poppins'
+	
+	}
+</style>
