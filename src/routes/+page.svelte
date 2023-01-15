@@ -3,7 +3,7 @@
 	import Navbar from '../components/Navbar/navbar.svelte';
 	import Container from '../components/Container/container.svelte';
 	import Hero from '../components/Hero/hero.svelte';
-
+import Brands from "../components/Brands/brands.svelte"
 
 
 	// const details = {
@@ -20,6 +20,7 @@
 	<Navbar />
 	<Container>
 	<Hero/>
+	<Brands/>
 	</Container>
 
 
