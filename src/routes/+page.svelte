@@ -6,6 +6,7 @@
 	import Brands from '../components/Brands/brands.svelte';
 	import UniStoreSection from '../components/GenericSection/genericSection.svelte';
 	import UniSearch from '../components/GenericSection/genericSection.svelte';
+	import TechnologySection from "../components/TechnologySection/TechnologySection.svelte"
 
 
 	// const details = {
@@ -50,6 +51,7 @@
 		h2={' UniForm. Multi-Modal Encoder.'}
 		h3={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis. tech behind UKV'}
 	/>
+	<TechnologySection/>
 </Container>
 
 <style>
