@@ -61,7 +61,7 @@
 	</Collapse>
 </Navbar>
 
-<style global>
+<style >
 	span :global(a) {
 		color: #787d8e;
 		font-size: 16px;
