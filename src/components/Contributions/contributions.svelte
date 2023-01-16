@@ -1,6 +1,6 @@
 <script>
 	import Contributors from '../../components/Card/index.svelte';
-	const details = [
+	const details  = [
 		{
 			title: 'Universal key value',
 			description:
@@ -37,7 +37,7 @@
 			stars: 64,
 			shares: 5
 		}
-	];
+	] ;
 </script>
 
 <div class="parent">
@@ -62,6 +62,7 @@
 	.parent {
 		display: flex;
 		flex-direction: column;
+        margin-bottom: 200px;
 	}
 	.text-area {
 		display: flex;

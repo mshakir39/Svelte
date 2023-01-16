@@ -3,11 +3,11 @@
 </script>
 
 <div class="parent">
-	<img src="/images/heroLogo.svg" alt="" />
+	<img src="/images/heroLogo.svg" alt="Unum" />
 	<div style="display:flex;flex-direction:column;">
 		<img
 			src="/images/brandLogoBlack.svg"
-			alt=""
+			alt="Unum"
 			height="32"
 			width="32"
 			style="margin-bottom:36px"

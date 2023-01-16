@@ -20,7 +20,7 @@
 	<NavbarBrand href="/"
 		><img
 			src="/images/brandLogo.svg"
-			alt=""
+			alt="Unum"
 			style="margin-left:60px;margin-right:175px;"
 		/></NavbarBrand
 	>

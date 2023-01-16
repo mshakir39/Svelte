@@ -41,7 +41,7 @@
 				<span class="tech">
 					{tech.name}
 				</span>
-				<img src={tech.imgSrc} alt="" />
+				<img src={tech.imgSrc} alt="technologies" />
 				<span class="feat"> {tech.technology}</span>
 			</div>
 		{/each}
