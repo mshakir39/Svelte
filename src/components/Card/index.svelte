@@ -26,7 +26,7 @@
 
 <div class="card-display">
 	<div class="card-container">
-		<Card>
+		<Card style="background: #F7F9FC;box-shadow:none">
 			<PrimaryAction on:click={() => clicked++}>
 				<Content class="mdc-typography--body2">
 					<img src="/images/github.png" alt="Github" />
@@ -89,6 +89,7 @@
 <style>
 	.card-display {
 		width: 400px;
+		margin-bottom: 40px;
 	}
 	.card-title {
 		margin: 0;

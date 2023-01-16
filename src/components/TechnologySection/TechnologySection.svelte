@@ -52,6 +52,7 @@
 	.text-area {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 200px;
 
 		/* width: 453px; */
 	}
