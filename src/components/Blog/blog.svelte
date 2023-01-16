@@ -32,7 +32,7 @@
 		width: 346.67px;
 		height: 410px;
 		background: #f7f9fc;
-        margin-bottom: 54px;
+		margin-bottom: 54px;
 	}
 	.date {
 		font-weight: 500;

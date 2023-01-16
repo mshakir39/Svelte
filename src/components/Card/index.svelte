@@ -1,14 +1,5 @@
 <script>
-	import Card, {
-		Content,
-		PrimaryAction,
-		Media,
-		Actions,
-		ActionButtons,
-		ActionIcons
-	} from '@smui/card';
-	import Button, { Label } from '@smui/button';
-	import IconButton, { Icon } from '@smui/icon-button';
+	import Card, { Content, PrimaryAction, Actions, ActionButtons } from '@smui/card';
 	import Chip, { Text } from '@smui/chips';
 
 	export let details = {

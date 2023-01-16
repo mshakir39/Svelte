@@ -1,27 +1,21 @@
 <button class="button-style">
-    <slot></slot>
+	<slot />
 </button>
 
 <style>
+	.button-style {
+		border: none;
+		width: 179px;
+		height: 40px;
+		color: white;
+		border-radius: 2px;
+		background: #000000;
+	}
 
-    .button-style{
-
-        border: none;
-    width: 179px;
-    height: 40px;
-    color: white;
-    /* padding: 12px; */
-    border-radius: 2px;
-    /* gap: 8px; */
-    background: #000000;
-    }
-    
-    .button-style:hover{
-
-        background: #31343F; 
-}
-.button-style:focus{
-
-background: #787D8E; 
-}
+	.button-style:hover {
+		background: #31343f;
+	}
+	.button-style:focus {
+		background: #787d8e;
+	}
 </style>

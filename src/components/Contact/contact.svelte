@@ -1,7 +1,4 @@
-<script>
-</script>
-
-<div class="container">
+<div class="contact-container">
 	<div class="img" />
 	<div class="text-area">
 		<span class="h1"> ML something </span>
@@ -18,7 +15,7 @@
 </div>
 
 <style>
-	.container {
+	.contact-container {
 		display: flex;
 		margin-bottom: 155px;
 	}
@@ -32,7 +29,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 550px;
-margin-left: 115px;
+		margin-left: 115px;
 		/* width: 453px; */
 	}
 
@@ -61,14 +58,25 @@ margin-left: 115px;
 		display: flex;
 	}
 	.input {
-        border: 1px solid #B3B3B3;
+		border: 1px solid #b3b3b3;
 	}
 	.button {
 		width: 126px;
 		height: 40px;
 		background: #787d8e;
-        border: none;
-        color: white;
-        margin-left: 13px;
+		border: none;
+		color: white;
+		margin-left: 13px;
+	}
+	@media (max-width: 767px) {
+		.contact-container {
+			flex-direction: column;
+			align-items: center;
+			margin-left: 0;
+		}
+		.text-area {
+			align-items: center;
+			margin-left: 0;
+		}
 	}
 </style>

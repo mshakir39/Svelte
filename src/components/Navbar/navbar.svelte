@@ -1,4 +1,4 @@
-<script>
+<script lang="js">
 	import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'sveltestrap';
 
 	let isOpen = false;
@@ -16,7 +16,7 @@
 	/>
 </svelte:head>
 
-<Navbar color="dark" light expand="md">
+<Navbar color="dark" light expand="md" style="width: -webkit-fill-available;">
 	<NavbarBrand href="/"
 		><img
 			src="/images/brandLogo.svg"
@@ -26,7 +26,7 @@
 	>
 	<NavbarToggler on:click={() => (isOpen = !isOpen)} />
 	<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
-		<Nav class="" navbar style="color:#fffff">
+		<Nav class="ms-auto" navbar style="color:#fffff">
 			<NavItem>
 				<span>
 					<NavLink href="#/">Products</NavLink>
@@ -61,7 +61,13 @@
 	</Collapse>
 </Navbar>
 
-<style >
+<style>
+	@media (max-width: 767px) {
+		:global(body) {
+			width: max-content;
+		}
+	}
+
 	span :global(a) {
 		color: #787d8e;
 		font-size: 16px;

@@ -56,14 +56,13 @@
 
 		/* width: 453px; */
 	}
-    .parent{
-        display:flex;
-        justify-content: space-around;
-    }
+	.parent {
+		display: flex;
+		justify-content: space-around;
+	}
 	.techParent {
 		display: flex;
 		flex-direction: column;
-	
 	}
 	.h1 {
 		margin-top: 24px;
@@ -99,5 +98,24 @@
 		text-align: center;
 		color: #787d8e;
 		margin-bottom: 16px;
+	}
+
+	@media (max-width: 767px) {
+		.text-area {
+			align-items: center;
+		}
+		.parent {
+			display: flex;
+			width: auto;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.techParent {
+			display: flex;
+			flex-direction: column;
+			width: fit-content;
+		}
 	}
 </style>

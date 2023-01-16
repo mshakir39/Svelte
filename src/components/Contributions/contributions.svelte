@@ -1,6 +1,6 @@
 <script>
 	import Contributors from '../../components/Card/index.svelte';
-	const details  = [
+	const details = [
 		{
 			title: 'Universal key value',
 			description:
@@ -37,7 +37,7 @@
 			stars: 64,
 			shares: 5
 		}
-	] ;
+	];
 </script>
 
 <div class="parent">
@@ -49,7 +49,7 @@
 			labore et dolore magna aliqua. Ut enim ad minim
 		</span>
 	</div>
-	<div style="display:flex;flex-wrap: wrap;">
+	<div class="contributer-parent">
 		{#each details as detail}
 			<div style="flex:50%">
 				<Contributors details={detail} />
@@ -59,10 +59,14 @@
 </div>
 
 <style>
+	.contributer-parent {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.parent {
 		display: flex;
 		flex-direction: column;
-        margin-bottom: 200px;
+		margin-bottom: 200px;
 	}
 	.text-area {
 		display: flex;
@@ -92,5 +96,15 @@
 		line-height: 21px;
 		color: #b3b3b3;
 		margin-bottom: 40px;
+	}
+	@media (max-width: 767px) {
+		.contributer-parent {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.parent {
+			align-items: center;
+		}
 	}
 </style>

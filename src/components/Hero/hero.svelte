@@ -4,7 +4,7 @@
 
 <div class="parent">
 	<img src="/images/heroLogo.svg" alt="Unum" />
-	<div style="display:flex;flex-direction:column;">
+	<div class="inner-container">
 		<img
 			src="/images/brandLogoBlack.svg"
 			alt="Unum"
@@ -32,6 +32,10 @@
 		margin-top: 5%;
 		margin-right: 120px;
 	}
+	.inner-container {
+		display: flex;
+		flex-direction: column;
+	}
 	.heading {
 		font-weight: 500;
 		font-size: 28px;
@@ -45,7 +49,6 @@
 		margin-bottom: 45px;
 	}
 	.docs {
-	
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
@@ -56,7 +59,18 @@
 		display: flex;
 		align-items: center;
 	}
-    .docs:hover{
-        color:black
-    }
+	.docs:hover {
+		color: black;
+	}
+	@media (max-width: 767px) {
+		.parent {
+			display: flex;
+			flex-direction: column;
+			margin-right: 0;
+		}
+		.inner-container {
+			align-items: center;
+			margin-top: 53px;
+		}
+	}
 </style>

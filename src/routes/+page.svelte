@@ -1,4 +1,4 @@
-<script lang="js">
+<script lang="ts">
 	// import type {ISection} from 'src/Interfaces/Isections';
 	import Card from '../components/Card/index.svelte';
 	import Navbar from '../components/Navbar/navbar.svelte';
@@ -9,8 +9,8 @@
 	import TechnologySection from '../components/TechnologySection/TechnologySection.svelte';
 	import Contributions from '../components/Contributions/contributions.svelte';
 	import BlogSection from '../components/BlogSection/blogSection.svelte';
-	import Contact from "../components/Contact/contact.svelte"
-	import Footer  from "../components/Footer/footer.svelte"
+	import Contact from '../components/Contact/contact.svelte';
+	import Footer from '../components/Footer/footer.svelte';
 
 	const details = [
 		{
@@ -40,23 +40,23 @@
 			h2: '  UniForm. Multi-Modal Encoder.',
 			h3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis. tech behind UKV'
 		}
-	] ;
+	];
 </script>
 
 <Navbar />
 <Container>
 	<Hero />
 	<Brands />
-	{#each details as detail } 
+	{#each details as detail}
 		<Section details={detail} />
 	{/each}
 	<TechnologySection />
 	<Contributions />
 	<BlogSection />
-	<Contact/>
-
+	<Contact />
 </Container>
-<Footer/>
+<Footer />
+
 <style>
 	:global(body) {
 		font-family: 'Poppins';

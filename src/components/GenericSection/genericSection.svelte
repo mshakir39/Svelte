@@ -1,20 +1,22 @@
 <script lang="ts">
 	// import type { ISection } from '../../Interfaces/Isections.js';
-	
-	export let details  = {
+	export let details = {
 		h1: '',
 		h2: '',
 		h3: '',
 		img: '',
 		imgAlignLeft: false,
-		features: [],
-		Links: []
+		features: [''],
+		Links: ['']
 	};
 
 	const { h1, h2, h3, img, imgAlignLeft, features, Links } = details;
 </script>
 
-<div class="container" style={`flex-direction:${imgAlignLeft === true ? 'row-reverse' : 'row'}`}>
+<div
+	class="main-container "
+	style={`flex-direction:${imgAlignLeft === true ? 'row-reverse' : 'row'}`}
+>
 	<div class="text-area">
 		<div style="width: 32px;height: 32px;background: #D9D9D9;" />
 		<span class="h1"> {h1}</span>
@@ -42,7 +44,7 @@
 </div>
 
 <style>
-	.container {
+	.main-container {
 		display: flex;
 		margin-bottom: 200px;
 	}
@@ -82,5 +84,20 @@
 		line-height: 21px;
 		color: #b3b3b3;
 		margin-bottom: 34px;
+	}
+
+	@media (max-width: 767px) {
+		.main-container {
+			flex-direction: column !important;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.text-area {
+			display: flex;
+			flex-direction: column;
+			width: 453px;
+			align-items: center;
+		}
 	}
 </style>

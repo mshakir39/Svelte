@@ -9,7 +9,17 @@
 	.brands {
 		display: flex;
 		justify-content: space-around;
-        margin-top: 144px;
-        margin-bottom: 144px;
+		margin-top: 144px;
+		margin-bottom: 144px;
+	}
+	@media (max-width: 767px) {
+		.brands {
+			flex-direction: column;
+			display: flex;
+			margin-top: 432px;
+			gap: 67px;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>

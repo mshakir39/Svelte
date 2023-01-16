@@ -1,15 +1,16 @@
-<script>
-	import Container from './../../../node_modules/sveltestrap/src/Container.svelte';
-
-</script>
-<div class="container">
-
-	<slot></slot>
+<div class="main-container">
+	<slot />
 </div>
-<style>
-    .container{
-margin-right: 160px;
-margin-left: 160px;
 
-    }
+<style>
+	.main-container {
+		margin-right: 160px;
+		margin-left: 160px;
+	}
+	@media (max-width: 767px) {
+		.main-container {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
 </style>
