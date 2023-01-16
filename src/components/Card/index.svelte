@@ -20,10 +20,10 @@
 		<Card style="background: #F7F9FC;box-shadow:none">
 			<PrimaryAction on:click={() => clicked++}>
 				<Content class="mdc-typography--body2">
-					<img src="/images/github.png" alt="Github" />
+					<img src="/images/github.png" alt="Github" style="margin-bottom:12px"/>
 					<h2 class="mdc-typography--headline6 card-title">
-						{title}
-						<Chip
+					<img src="images/book.svg" alt="book" style="margin-right:9.81px"/>	{title}
+						<!-- <Chip
 							chip={status}
 							style="border-radius: unset;
 						text-transform: capitalize;
@@ -32,7 +32,7 @@
 						height: 25px;"
 						>
 							<Text>{status}</Text>
-						</Chip>
+						</Chip> -->
 					</h2>
 					<div class="card-description">
 						{description}

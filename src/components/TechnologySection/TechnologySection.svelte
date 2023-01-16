@@ -29,11 +29,10 @@
 </script>
 
 <div class="text-area">
-	<span class="h1"> ML something </span>
+	<!-- <span class="h1"> ML something </span> -->
 	<span class="h2">Technology behind</span>
 	<span class="h3"
-		>Unum covers every step of the modern Data Processing – from Storage to in-<br />built ML and
-		modelling</span
+		>For every of our products we created custom tech for storage, networking,<br /> compute, or AI modelling</span
 	>
 	<div class="parent">
 		{#each technologies as tech}
@@ -58,7 +57,7 @@
 	}
 	.parent {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.techParent {
 		display: flex;
@@ -72,7 +71,7 @@
 		color: #b3b3b3;
 	}
 	.h2 {
-		margin-top: 4px;
+		margin-bottom: 12px;
 		font-weight: 500;
 		font-size: 28px;
 		line-height: 42px;
@@ -82,19 +81,21 @@
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 21px;
-		color: #b3b3b3;
-		margin-bottom: 56px;
+		color: #787d8e;
+		margin-bottom: 76px;
 	}
 	.feat {
+		font-weight: 500;
 		font-size: 18px;
 		line-height: 27px;
-		font-weight: 500;
-		margin-top: 16px;
+		color: #787d8e;
+		margin-top: 22px;
 		text-align: center;
 	}
 	.tech {
-		font-size: 16px;
-		line-height: 24px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
 		text-align: center;
 		color: #787d8e;
 		margin-bottom: 16px;

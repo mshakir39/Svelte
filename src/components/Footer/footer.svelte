@@ -4,6 +4,13 @@
 		<div class="row">
 			<div class="flex-20">
 				<img src="images/brandLogoFooter.svg" alt="brandLogoFooter" />
+				<ul class="social-icons">
+					<li><a href="#/"><img src="images/footerGit.svg" alt="github" /></a></li>
+					<li><a href="#/"><img src="images/footerLinkedIn.svg" alt="linkedIn" /></a></li>
+					<li><a href="#/"><img src="images/footerTwitter.svg" alt="twitter" /></a></li>
+					<li><a href="#/"><img src="images/footerYoutube.svg" alt="youtube" /></a></li>
+					<li><a href="#/"><img src="images/footerEmail.svg" alt="email" /></a></li>
+				</ul>
 			</div>
 
 			<div class="flex-20">
@@ -24,7 +31,7 @@
 				</ul>
 			</div>
 			<div class="flex-20">
-				<h6 style="margin-bottom:20px">{null}</h6>
+				<h6 style="margin-bottom:20px"></h6>
 				<ul class="footer-links">
 					<li><a href="#/">UCSB</a></li>
 					<li><a href="#/">ADSB</a></li>
@@ -43,7 +50,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<!-- <div class="container">
 		<hr style="border: 1px solid #CCCCCC;" />
 		<div class="row">
 			<div class="col-md-8 col-sm-6 col-xs-12" style="color:#B3B3B3">
@@ -53,17 +60,9 @@
 				</p>
 			</div>
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<ul class="social-icons">
-					<li><a href="#/"><img src="images/footerGit.svg" alt="github" /></a></li>
-					<li><a href="#/"><img src="images/footerLinkedIn.svg" alt="linkedIn" /></a></li>
-					<li><a href="#/"><img src="images/footerTwitter.svg" alt="twitter" /></a></li>
-					<li><a href="#/"><img src="images/footerYoutube.svg" alt="youtube" /></a></li>
-					<li><a href="#/"><img src="images/footerEmail.svg" alt="email" /></a></li>
-				</ul>
-			</div>
+		
 		</div>
-	</div>
+	</div> -->
 </footer>
 
 <style>
@@ -120,9 +119,10 @@
 	@media (max-width: 767px) {
 	}
 	.social-icons {
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
+		display: flex;
+    justify-content: center;
+    margin-right: 41%;
+    margin-top: 36px;
 	}
 	.social-icons li {
 		display: inline-block;
@@ -138,7 +138,7 @@
 		width: 44px;
 		height: 44px;
 		text-align: end;
-		margin-right: 8px;
+		/* margin-right: 8px; */
 		border-radius: 100%;
 		-webkit-transition: all 0.2s linear;
 		-o-transition: all 0.2s linear;

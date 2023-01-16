@@ -2,52 +2,49 @@
 	import Contributors from '../../components/Card/index.svelte';
 	const details = [
 		{
-			title: 'Universal key value',
+			title: 'Universal Keys & Values',
 			description:
 				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB • UMem • UDisk × from C • C++ • Python • Java • GoLang',
 			status: 'public',
 			lang: 'C++',
 			stars: 64,
-			shares: 5
+			shares: 4
 		},
 		{
-			title: 'Universal key value',
+			title: 'Unexceptionally Consistent Set',
 			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB • UMem • UDisk × from C • C++ • Python • Java • GoLang',
+				'If only std::set was a DBMS: collection of templated ACID in-memory exception-free thread-safe and concurrent containers in a header-only library',
 			status: 'public',
 			lang: 'C++',
 			stars: 64,
-			shares: 5
+			shares: 4
 		},
 		{
-			title: 'Universal key value',
+			title: 'Uncluttered Navigable Small Worlds',
 			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB • UMem • UDisk × from C • C++ • Python • Java • GoLang',
+				'Tiny Approximate Nearest Neighbors Search library for large point clouds in not necceserily metric spaces, with online updates, and hardware acceleration with x86 AVX2, AVX-512, and Arm Neon',
 			status: 'public',
 			lang: 'C++',
 			stars: 64,
-			shares: 5
+			shares: 4
 		},
 		{
-			title: 'Universal key value',
+			title: 'Uninterrupted JSON Remote Procedure Calls',
 			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB • UMem • UDisk × from C • C++ • Python • Java • GoLang',
+				'Remember FastAPI? This is 100x Fast-ER-API, implementing JSON-RPC, and based on interrupt-less IO technologies, like io_uring, and wrapped into a familiar Python interface',
 			status: 'public',
 			lang: 'C++',
 			stars: 64,
-			shares: 5
+			shares: 4
 		}
 	];
 </script>
 
 <div class="parent">
 	<div class="text-area">
-		<span class="h1"> ML something </span>
+		<!-- <span class="h1"> ML something </span> -->
 		<span class="h2">Open source contributions</span>
-		<span class="h3"
-			>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim
-		</span>
+		<span class="h3">Our team created and is Maintaining the following Repositories. </span>
 	</div>
 	<div class="contributer-parent">
 		{#each details as detail}
@@ -76,13 +73,13 @@
 		/* width: 453px; */
 	}
 
-	.h1 {
+	/* .h1 {
 		margin-top: 24px;
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 18px;
 		color: #b3b3b3;
-	}
+	} */
 	.h2 {
 		margin-top: 4px;
 		font-weight: 500;
@@ -94,7 +91,7 @@
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 21px;
-		color: #b3b3b3;
+		color: #787d8e;
 		margin-bottom: 40px;
 	}
 	@media (max-width: 767px) {

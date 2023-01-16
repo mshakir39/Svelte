@@ -1,6 +1,9 @@
 <div class="contact-container">
-	<div class="img" />
-	<div class="text-area">
+	<span class="work">Lets Work Together!</span>
+	<input type="text" class="input" placeholder="Your email"/>
+	<button class="button-style"> GET IN TOUCH </button>
+	<!-- <div class="img" /> -->
+	<!-- <div class="text-area">
 		<span class="h1"> ML something </span>
 		<span class="h2">[CTA] Contact sales form</span>
 		<span class="h3"
@@ -11,62 +14,59 @@
 			<input type="text" class="input" />
 			<button class="button"> CTA</button>
 		</div>
-	</div>
+	</div> -->
 </div>
 
 <style>
-	.contact-container {
-		display: flex;
-		margin-bottom: 155px;
-	}
-	.img {
-		width: 551px;
-		height: 315px;
-
-		background: #d9d9d9;
-	}
-	.text-area {
-		display: flex;
-		flex-direction: column;
-		width: 550px;
-		margin-left: 115px;
-		/* width: 453px; */
-	}
-
-	.h1 {
-		margin-top: 24px;
-		font-weight: 500;
-		font-size: 12px;
-		line-height: 18px;
-		color: #b3b3b3;
-	}
-	.h2 {
-		margin-top: 4px;
+	.work {
 		font-weight: 500;
 		font-size: 28px;
-		line-height: 42px;
-		color: black;
+		line-height: 38px;
+		padding-right: 110px;
+		
+		color: #000000;
 	}
-	.h3 {
+	.contact-container {
+		border-radius: 20px;
+		display: flex;
+		/* width: 1120px; */
+		height: 210px;
+		background: #f7f9fc;
+		margin-bottom: 155px;
+		justify-content: center;
+		/* padding-left: 138.5px; */
+    align-items: center;
+	}
+	.input{
+		width: 251px;
+		height: 40px;
+		border-radius: 8px;
+		background: none;
+		border-color: #787d8e;
+		margin-right: 10px;
+		border: 2px solid black;
+		padding-left: 10px;
+		color: #B3B3B3;
+	}
+	.button-style {
+		border: none;
+		width: 161px;
 		font-weight: 500;
 		font-size: 14px;
-		line-height: 21px;
-		color: #b3b3b3;
-		margin-bottom: 40px;
-	}
-	.form {
-		display: flex;
-	}
-	.input {
-		border: 1px solid #b3b3b3;
-	}
-	.button {
-		width: 126px;
 		height: 40px;
+		color: #f7f9fc;
+
+		/* Black & White/Pure black */
+
+		background: #000000;
+		border-radius: 8px;
+	}
+
+	.button-style:hover {
+		background: #31343f;
+	}
+	.button-style:focus {
 		background: #787d8e;
-		border: none;
-		color: white;
-		margin-left: 13px;
 	}
 	@media (max-width: 767px) {
 		.contact-container {

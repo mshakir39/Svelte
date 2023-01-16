@@ -12,12 +12,13 @@
 			width="32"
 			style="margin-bottom:36px"
 		/>
-		<span class="heading"> Unum. Scaling Intelligence. </span>
+		<span class="heading"> Unum<br>
+			<span style="font-weight:400">Scaling Intelligence</span></span>
 		<span class="des">
-			Building Core Technologies for Data-Lakes <br /> and Cloud Providers.
+			Rebuilding the core Data infrastructure <br>for the age of AI
 		</span>
 		<div style="display:flex">
-			<Button>CONTACT SALES</Button>
+			<Button>CONTACT US</Button>
 			<span class="docs"> Read the Docs</span>
 		</div>
 	</div>
@@ -40,6 +41,7 @@
 		font-weight: 500;
 		font-size: 28px;
 		line-height: 42px;
+		height: 102px;
 	}
 	.des {
 		font-weight: 500;

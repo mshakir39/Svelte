@@ -8,7 +8,7 @@
 		width: 179px;
 		height: 40px;
 		color: white;
-		border-radius: 2px;
+		border-radius: 4px;
 		background: #000000;
 	}
 

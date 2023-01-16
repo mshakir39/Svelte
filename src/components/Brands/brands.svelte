@@ -9,8 +9,8 @@
 	.brands {
 		display: flex;
 		justify-content: space-around;
-		margin-top: 144px;
-		margin-bottom: 144px;
+		margin-top: 200px;
+		margin-bottom: 200px;
 	}
 	@media (max-width: 767px) {
 		.brands {

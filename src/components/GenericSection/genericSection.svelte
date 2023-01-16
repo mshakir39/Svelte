@@ -2,15 +2,23 @@
 	// import type { ISection } from '../../Interfaces/Isections.js';
 	export let details = {
 		h1: '',
-		h2: '',
+		title1: '',
+		title2: '',
 		h3: '',
 		img: '',
+		comingSoon:false,
 		imgAlignLeft: false,
+		learnMore: false,
 		features: [''],
 		Links: ['']
 	};
 
-	const { h1, h2, h3, img, imgAlignLeft, features, Links } = details;
+	let margin = '';
+
+	const { h1, title1, title2, h3, img, imgAlignLeft, features, Links, learnMore,comingSoon } = details;
+	if (learnMore === false) {
+		margin = '12%';
+	}
 </script>
 
 <div
@@ -18,26 +26,26 @@
 	style={`flex-direction:${imgAlignLeft === true ? 'row-reverse' : 'row'}`}
 >
 	<div class="text-area">
-		<div style="width: 32px;height: 32px;background: #D9D9D9;" />
-		<span class="h1"> {h1}</span>
-		<span class="h2">{h2}</span>
+		{#if comingSoon===true}
+		<div class="coming-soon">Coming Soon</div>
+		{/if}
+		<!-- <span class="h1"> {h1}</span> -->
+		<span />
+		<span class="h2">{title1}</span>
+		<span class="title2">{title2}</span>
 		<span class="h3"> {h3}</span>
-		<div class="features">
+		<div class="features" style="margin-top:{margin}">
 			{#each features as feature}
-				<span
-					style="width: 60px;
-                    text-align: center;  height: 22px;  background: #F7F9FC;">{feature}</span
-				>
+				<span style="margin-bottom:8px">{feature}</span>
 			{/each}
 		</div>
-
 		<div class="links">
-			{#each Links as Link}
-				<span
-					style="  margin-right:20px;font-size: 16px;line-height: 24px;color: #787D8E;
-  ">{Link}</span
-				>
-			{/each}
+			{#if learnMore === true}
+				<span style="margin-right:22px">learn more</span>
+				<img src="images/smallAws.svg" alt="aws" style="margin-right:22px" />
+				<img src="images/smallGc.svg" alt="gc" style="margin-right:22px" />
+				<img src="images/Learnmore3.svg" alt="aws" />
+			{/if}
 		</div>
 	</div>
 	<img src={img} alt="" />
@@ -48,42 +56,72 @@
 		display: flex;
 		margin-bottom: 200px;
 	}
+	.coming-soon{
+		width: 111px;
+height: 22px;
+text-align: center;
+font-size: 14px;
+font-weight: 500;
+background: #F2F4FB;
+border-radius: 4px;
+margin-bottom: 29px;
+color: #787D8E;
+	}
 	.features {
+		font-weight: 500;
 		display: flex;
-		/* justify-content: space-around; */
-		font-size: 12px;
-		line-height: 18px;
-		margin-bottom: 34px;
-		color: #787d8e;
+		flex-direction: column;
+		font-size: 16px;
+		line-height: 24px;
+
+		color: #000000;
 	}
 	.links {
 		display: flex;
+		margin-top: 43px;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: #787d8e;
 	}
 	.text-area {
 		display: flex;
 		flex-direction: column;
 		width: 453px;
 	}
-	.h1 {
+	.title2 {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 38px;
+		margin-bottom: 12px;
+	}
+	/* .h1 {
 		margin-top: 24px;
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 18px;
 		color: #b3b3b3;
-	}
+	} */
 	.h2 {
-		margin-top: 4px;
+		margin-bottom: 0;
 		font-weight: 500;
 		font-size: 28px;
 		line-height: 42px;
 		color: black;
 	}
 	.h3 {
-		font-weight: 500;
+		width: 453px;
+		height: 72px;
+		margin-bottom: 24px;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
 		font-size: 14px;
-		line-height: 21px;
-		color: #b3b3b3;
-		margin-bottom: 34px;
+		line-height: 24px;
+
+		color: #787d8e;
 	}
 
 	@media (max-width: 767px) {

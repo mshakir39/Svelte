@@ -3,37 +3,31 @@
 	const data = [
 		{
 			date: 'Nov 30,2022',
-			img: '',
-			title: 'Powering Next Generation Applications with UniStore ',
+			img: 'images/blog1.png',
+			title: 'Pandas, CuDF, Modin, Arrow, Spark, and a Billion Taxi Rides',
 			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB '
+				'Choosing the right in-memory tabular processing framework'
 		},
 		{
 			date: 'Nov 30,2022',
-			img: '',
-			title: 'Powering Next Generation Applications with UniStore ',
+			img: 'images/blog2.png',
+			title: '879 GB/s Parallel Reductions in C++ and CUDA',
 			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB '
+				'Pushing the limits of memory-bound tasks on DDR4-powered CPUs and GDDR6-powered GPUs'
 		},
 		{
 			date: 'Nov 30,2022',
-			img: '',
-			title: 'Powering Next Generation Applications with UniStore ',
+			img: 'images/blog3.png',
+			title: 'CuPy = 50x Faster NumPy',
 			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB '
+				'Finding the easiest ways to accelerate your Linear Algebra workloads on modern GPUs'
 		},
-		{
-			date: 'Nov 30,2022',
-			img: '',
-			title: 'Powering Next Generation Applications with UniStore ',
-			description:
-				'Universal DBMS for Docs • Graphs • Blobs • Vectors × in Local • Remote × RocksDB • LevelDB '
-		}
+	
 	];
 </script>
 
 <div class="blog-container">
-	<span class="h1"> ML something </span>
+	<!-- <span class="h1"> ML something </span> -->
 	<span class="h2">Top Technical Articles from our Blog</span>
 	<div class="blog-parent">
 		{#each data as detail}
