@@ -62,7 +62,7 @@
 					</NavItem>
 					<NavItem style="">
 						<span>
-							<NavLink href="#" style="color:white;white-space:nowrap">CONTACT SALES</NavLink>
+							<NavLink href="#" style="color:white;white-space:nowrap">CONTACT US</NavLink>
 						</span>
 					</NavItem>
 				</div>

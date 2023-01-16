@@ -13,9 +13,10 @@
 		font-weight: 600;
 	}
 	.mission {
-		width: 1077px;
+		/* width: 1077px; */
 		height: 80px;
 		margin-top: 200px;
+		text-align: center;
 		/* Pitch/Titles/Body/Body 3 */
 
 		font-family: 'Poppins';

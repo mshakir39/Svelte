@@ -3,7 +3,7 @@
 </script>
 
 <div class="parent">
-	<img src="/images/heroLogo.svg" alt="Unum" />
+	<img src="/images/heroLogo.svg" alt="Unum" style="    margin-right: 14%;" />
 	<div class="inner-container">
 		<img
 			src="/images/brandLogoBlack.svg"
@@ -28,7 +28,7 @@
 	.parent {
 		display: flex;
 		height: 560px;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		margin-top: 5%;
 		margin-right: 120px;
@@ -47,6 +47,7 @@
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 27px;
+		width: 400px;
 		color: #787d8e;
 		margin-bottom: 45px;
 	}
